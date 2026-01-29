@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Наши сотрудники</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .site-index {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .jumbotron {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .jumbotron h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 25px;  
+            margin: 0 auto;
+        }
+
+        .employee {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            transition: transform 0.3s ease;
+        }
+
+        .employee:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .employee img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 3px solid #f0f0f0;
+        }
+
+        .employee h3 {
+            margin: 10px 0 5px 0;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+
+        .employee .position {
+            font-style: italic;
+            color: #3498db;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .employee .description {
+            color: #555;
+            text-align: center;
+            font-size: 0.9em;
+            line-height: 1.5;
+            padding: 0 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                gap: 15px;
+            }
+            
+            .employee {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .employee img {
+                width: 180px;
+                height: 180px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .employee {
+                max-width: 100%;
+            }
+            
+            .employee img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site-index">
+        <div class="jumbotron">
+            <h1 class="display-2">Наши сотрудники</h1>
+            
+            <div class="container">
+                <!-- Сотрудник 1 -->
+                <div class="employee">
+                    <img src="/images/1.jpg" alt="Бархатова Мария Александровна">
+                    <h3>Бархатова Мария Александровна</h3>
+                    <p class="position">Преподаватель, первая квалификационная категория</p>
+                    <p class="description">Преподаватель русского языка и литературы. Стаж работы: 15 лет. Автор методических пособий для студентов.</p>
+                </div>
+
+                <!-- Сотрудник 2 -->
+                <div class="employee">
+                    <img src="/images/2.jpg" alt="Смирнова Елена Викторовна">
+                    <h3>Смирнова Елена Викторовна</h3>
+                    <p class="position">Старший преподаватель информатики</p>
+                    <p class="description">Преподаватель информационных систем и программирования. Эксперт в области веб-разработки.</p>
+                </div>
+
+                <!-- Сотрудник 3 -->
+                <div class="employee">
+                    <img src="/images/3.jpg" alt="Иванов Алексей Петрович">
+                    <h3>Иванов Алексей Петрович</h3>
+                    <p class="position">Заведующий отделением</p>
+                    <p class="description">Кандидат технических наук. Руководитель отделения технических специальностей.</p>
+                </div>
+
+                <!-- Сотрудник 4 -->
+                <div class="employee">
+                    <img src="/images/4.jpg" alt="Кузнецова Светлана Анатольевна">
+                    <h3>Кузнецова Светлана Анатольевна</h3>
+                    <p class="position">Преподаватель химических технологий</p>
+                    <p class="description">Преподаватель химической технологии производства. Высшая квалификационная категория.</p>
+                </div>
+
+                <!-- Сотрудник 5 -->
+                <div class="employee">
+                    <img src="/images/5.jpg" alt="Сидоров Дмитрий Николаевич">
+                    <h3>Сидоров Дмитрий Николаевич</h3>
+                    <p class="position">Преподаватель электротехники</p>
+                    <p class="description">Преподаватель технической эксплуатации электрического оборудования. Инженер-практик.</p>
+                </div>
+
+                <!-- Сотрудник 6 -->
+                <div class="employee">
+                    <img src="/images/6.jpg" alt="Васильева Ольга Сергеевна">
+                    <h3>Васильева Ольга Сергеевна</h3>
+                    <p class="position">Методист, преподаватель экономики</p>
+                    <p class="description">Преподаватель экономических дисциплин. Разработчик учебных программ и методических материалов.</p>
+                </div>
+
+                <!-- Сотрудник 7 -->
+                <div class="employee">
+                    <img src="/images/7.jpg" alt="Петров Игорь Владимирович">
+                    <h3>Петров Игорь Владимирович</h3>
+                    <p class="position">Преподаватель нефтегазового дела</p>
+                    <p class="description">Специалист в области сооружения и эксплуатации газонефтепроводов. Производственный стаж: 20 лет.</p>
+                </div>
+
+                <!-- Сотрудник 8 -->
+                <div class="employee">
+                    <img src="/images/8.jpg" alt="Николаева Анна Дмитриевна">
+                    <h3>Николаева Анна Дмитриевна</h3>
+                    <p class="position">Преподаватель промышленного оборудования</p>
+                    <p class="description">Преподаватель монтажа и технического обслуживания промышленного оборудования. Инженер-механик.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <!-- Дополнительный контент можно добавить здесь -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
